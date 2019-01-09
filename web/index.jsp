@@ -3,14 +3,18 @@
 <html>
   <head>
     <title>fiction</title>
-  </head>
-  <body>
-    <form action="/register" method="post">
-      用户名<input type="text" value="" name="uaccount"><br>
-      密码<input type="password" value="" name="upwd"><br>
-      昵称<input type="text" value="" name="nickname"><br>
-      <input type="submit" value="提交">
+    <script type="text/javascript" src="/js/jquery-2.1.1.js"></script>
+    <script type="text/javascript">
 
-    </form>
+      function reg() {
+        window.location.href="reg.jsp"
+      }
+    </script>
+  </head>
+
+  <body>
+  <input  type="button" onclick="reg()" value="注册">
+  <input type="button" value="登录">
+
   </body>
 </html>

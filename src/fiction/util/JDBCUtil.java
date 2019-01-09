@@ -4,8 +4,78 @@ package fiction.util;
  * @author ALTERUI
  *
  */
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
 
 
+public class JDBCUtil {
+
+	public static Connection getConn() {
+		Connection conn = null;
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+			String url = "jdbc:mysql://localhost:3306/book?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull";
+			String user = "root";
+			String password = "root";
+			conn = DriverManager.getConnection(url, user, password);
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+			e.printStackTrace();
+		} finally {
+
+		}
+
+		return conn;
+	}
+
+	public static ResultSet select(String sql) {
+		Connection conn = getConn();
+		Statement statement = null;
+		ResultSet result = null;
+		try {
+			statement = conn.createStatement();
+			result = statement.executeQuery(sql);
+
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return result;
+	}
+
+	public static boolean insert(String sql) {
+		Connection conn = getConn();
+		Statement statement = null;
+		boolean flag=true ;
+		try {
+			statement = conn.createStatement();
+
+			statement.execute(sql);
+		} catch (SQLException e) {
+			flag=false;
+		}
+		return flag;
+	}
+	public static void update(String sql) {
+		Connection conn = getConn();
+		Statement statement = null;
+		try {
+			statement = conn.createStatement();
+			statement.executeUpdate(sql);
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+}
+
+
+/*
 import fiction.model.UserInfo;
 
 import java.sql.*;
@@ -20,7 +90,7 @@ public class JDBCUtil {
 	//查询结果集
 	private static ResultSet resultSet;
 	
-	public static void getConnection() {
+	public static Statement getConnection() {
 		try {
 			//通过反射加载mysql的驱动类
 			Class.forName("com.mysql.jdbc.Driver");
@@ -30,38 +100,27 @@ public class JDBCUtil {
 			//获取数据库连接
 			conn = DriverManager.getConnection(url, userName, pwd);
 			//通过conn获取statement对象
-			statement = conn.createStatement();
-
-			//封装UserInfo对象
-			UserInfo userInfo = new UserInfo();
-			userInfo.setUaccount("liurui");
-			userInfo.setUpwd("123456");
-			Date date = new Date();
-			Timestamp time = new Timestamp(date.getTime());
-
-			userInfo.setCreatetime(time);
-			userInfo.setNickname("瑞哥");
-			userInfo.setLasttime(time);
-			userInfo.setMember(1);
-
-			//构建sql语句
-			String sql = "INSERT INTO user_info(uaccout,upwd,createtime,nickname,lasttime,member) " +
-					"VALUES('"+userInfo.getUaccount()+"','"+userInfo.getUpwd()+"'," +
-					"'"+userInfo.getCreatetime()+"','"+userInfo.getNickname()+"'," +
-					" '"+userInfo.getLasttime()+"','"+userInfo.getMember()+"')";
-			//执行
-			statement.execute(sql);
-
+			return conn.createStatement();
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+
 		}
+		return null;
 	}
 
-	public static void main(String[] args) {
-		getConnection();
+	*/
+/**
+	 *
+	 * @param sql
+	 * @throws Exception
+	 *//*
+
+	public static void insert(String sql) throws Exception{
+		getConnection().execute(sql);
 	}
-	
-	
+
+
 	
 }
+*/
