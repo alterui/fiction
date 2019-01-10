@@ -1,20 +1,7 @@
-<%-- Created by IntelliJ IDEA. --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-  <head>
-    <title>fiction</title>
-    <script type="text/javascript" src="/js/jquery-2.1.1.js"></script>
-    <script type="text/javascript">
-
-      function reg() {
-        window.location.href="reg.jsp"
-      }
-    </script>
-  </head>
-
-  <body>
-  <input  type="button" onclick="reg()" value="注册">
-  <input type="button" value="登录">
-
-  </body>
-</html>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@include file="jsp/include/fore/head.jsp"%>
+<%@include file="jsp/include/fore/top.jsp"%>
+<%@include file="jsp/include/fore/navi.jsp"%>
+<%@include file="jsp/include/fore/indexContent.jsp"%>
+<%@include file="jsp/include/fore/foot.jsp"%>

@@ -11,7 +11,7 @@
     <title>reg</title>
 </head>
 <body>
-    <form action="register" method="post">
+    <form action="index.jsp" method="post">
      用户名<input type="text" value="" name="uaccount"><br>
      密码<input type="password" value="" name="upwd"><br>
      昵称<input type="text" value="" name="nickname"><br>
