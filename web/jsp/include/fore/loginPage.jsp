@@ -35,6 +35,8 @@
 					} else {
 						layer.msg(data.msg);
 						draw(show_num);
+
+                        $(".layui-btn").removeAttr("disabled");
 					}
 
 				}, "json");

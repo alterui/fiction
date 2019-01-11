@@ -1,15 +1,11 @@
-package com.lr.fiction.service;
+package com.lr.fiction.service.impl;
 
-import java.sql.Date;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.List;
-
-
-
 import com.lr.fiction.model.UserInfo;
+import com.lr.fiction.service.UserServiceI;
 import com.lr.fiction.util.JdbcUtil;
 
 public class UserServiceImp implements UserServiceI {

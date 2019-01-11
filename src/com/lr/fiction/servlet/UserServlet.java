@@ -1,18 +1,13 @@
 package com.lr.fiction.servlet;
 
 import com.lr.fiction.model.UserInfo;
-import com.lr.fiction.service.UserServiceI;
-import com.lr.fiction.service.UserServiceImp;
+import com.lr.fiction.service.impl.UserServiceImp;
 import com.lr.fiction.util.DataUtil;
 import com.lr.fiction.util.JSONUtils;
-import com.lr.fiction.util.JdbcUtil;
-
-import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Timestamp;
 import java.util.Date;
@@ -28,7 +23,9 @@ public class UserServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) {
         try {
             req.setCharacterEncoding("UTF-8");
+            resp.setCharacterEncoding("UTF-8");
 
+            //根据path，调用方法
             String path = req.getServletPath();
             switch (path) {
                 case "/login":
@@ -52,37 +49,49 @@ public class UserServlet extends HttpServlet {
         doPost(req, resp);
     }
 
+    /**
+     * 登录
+     * @param req
+     * @param resp
+     * @throws Exception
+     */
     public void login(HttpServletRequest req, HttpServletResponse resp) throws Exception{
-        UserInfo userInfo = new UserInfo();
 
+        //接收前端传来的用户名和密码
         String uaccount = req.getParameter("uaccout");
         String upwd = req.getParameter("upwd");
 
-
+        //存入userInfo对象中
+        UserInfo userInfo = new UserInfo();
         userInfo.setUaccount(uaccount);
         userInfo.setUpwd(upwd);
 
-
+        //查询数据库是否有这个用户
         List<UserInfo> loginUser = userServiceImp.selectByUser(userInfo);
-        if (loginUser.size() != 0) {
-            System.out.println("登录成功");
-            PrintWriter pw = resp.getWriter();
-            DataUtil data = new DataUtil();
+
+        PrintWriter pw = resp.getWriter();
+        DataUtil data = new DataUtil();
+        if (loginUser.size() != 0) {//表明有这个用户
+
             data.setResult(true);
             data.setMsg("登录成功");
+            //用户登录后，将用户名显示在页面上
             for (UserInfo user : loginUser) {
-               // req.setAttribute("loginUser",user);
-                System.out.println(user.getNickname());
                 HttpSession session = req.getSession();
+                //表明用户已经登录
                 session.setAttribute("flag", 1);
-                session.setAttribute("loginUser",user);
+                //登录用户的信息
+                session.setAttribute("loginUser", user);
             }
 
-
-            JSONUtils.writeJSON(pw, data);
-
-
+        } else {//没有这个用户
+            data.setResult(false);
+            data.setMsg("用户名或密码输入错误！请重新输入");
         }
+
+        //把json格式的信息返回到前端
+        JSONUtils.writeJSON(pw, data);
+
 
 
     }
@@ -94,25 +103,31 @@ public class UserServlet extends HttpServlet {
      * @throws Exception
      */
     public void register(HttpServletRequest req, HttpServletResponse resp) throws Exception{
+        //用户存放前端注册页面传来的值
         UserInfo userInfo = new UserInfo();
 
+        //接收值
         String uaccount = req.getParameter("uaccout");
         String upwd = req.getParameter("password");
         Timestamp timestamp = new Timestamp(new Date().getTime());
         String nickname = req.getParameter("nickname");
         String member = req.getParameter("member");
 
+        //存放
         userInfo.setUaccount(uaccount);
         userInfo.setUpwd(upwd);
         userInfo.setNickname(nickname);
         userInfo.setCreatetime(timestamp);
         userInfo.setLasttime(timestamp);
 
+        //是否插入到数据库
         boolean result = userServiceImp.insert(userInfo);
 
+        //返回到前端的数据
         DataUtil data = new DataUtil();
         data.setResult(result);
 
+        //传入到前端
         PrintWriter pw = resp.getWriter();
         JSONUtils.writeJSON(pw, data);
 
@@ -127,8 +142,11 @@ public class UserServlet extends HttpServlet {
      */
     public void logout(HttpServletRequest req, HttpServletResponse resp) throws Exception{
         HttpSession session = req.getSession();
+        //表明用户没有登录
         session.setAttribute("flag", 0);
+        //移除用户
         session.removeAttribute("loginUser");
+        //跳转到首页
         resp.sendRedirect("/index.jsp");
 
     }

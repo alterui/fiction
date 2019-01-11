@@ -3,7 +3,7 @@ package com.lr.fiction.model;
 import java.sql.Timestamp;
 
 /**
-   * 用户实体类
+ * 用户实体类
  * @author ALTERUI
  *
  */

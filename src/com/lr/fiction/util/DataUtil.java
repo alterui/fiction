@@ -5,14 +5,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DataUtil implements Serializable{
-	/**
-	 * 
-	 */
+
 	private static final long serialVersionUID = 1L;
 	private boolean result;//操作是否成功 成功 true  失败 false
-	private Object ob;//结果�? 
+	private Object ob;//结果
 	private String msg;//提示信息
-	private int total;//总的记录�?
+	private int total;//总的记录
 	private List<?> data = new ArrayList<Object>();//查询出的对应结果
 	
 	public List<?> getData() {
