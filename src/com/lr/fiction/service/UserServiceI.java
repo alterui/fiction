@@ -20,5 +20,7 @@ public interface UserServiceI {
 	 * @return
 	 */
 	boolean insert(UserInfo user);
+
+	UserInfo selectByAccout(String accout);
 	
 }

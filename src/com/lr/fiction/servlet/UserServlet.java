@@ -1,7 +1,7 @@
 package com.lr.fiction.servlet;
 
 import com.lr.fiction.model.UserInfo;
-import com.lr.fiction.service.impl.UserServiceImp;
+import com.lr.fiction.service.UserServiceImp;
 import com.lr.fiction.util.DataUtil;
 import com.lr.fiction.util.JSONUtils;
 import javax.servlet.http.HttpServlet;
@@ -14,7 +14,7 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * Servlet
+ * User Servlet
  * Created by ALTERUI on 2019/1/8 20:53
  */
 public class UserServlet extends HttpServlet {
@@ -112,6 +112,8 @@ public class UserServlet extends HttpServlet {
         Timestamp timestamp = new Timestamp(new Date().getTime());
         String nickname = req.getParameter("nickname");
         String member = req.getParameter("member");
+        //返回到前端的数据
+        DataUtil data = new DataUtil();
 
         //存放
         userInfo.setUaccount(uaccount);
@@ -119,13 +121,14 @@ public class UserServlet extends HttpServlet {
         userInfo.setNickname(nickname);
         userInfo.setCreatetime(timestamp);
         userInfo.setLasttime(timestamp);
-
-        //是否插入到数据库
-        boolean result = userServiceImp.insert(userInfo);
-
-        //返回到前端的数据
-        DataUtil data = new DataUtil();
-        data.setResult(result);
+        //判断数据库是否有
+        if (userServiceImp.selectByAccout(uaccount) == null) {
+            boolean result = userServiceImp.insert(userInfo);
+            data.setResult(result);
+        } else {
+            data.setResult(false);
+            data.setMsg("用户名已存在");
+        }
 
         //传入到前端
         PrintWriter pw = resp.getWriter();

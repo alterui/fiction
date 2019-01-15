@@ -24,45 +24,10 @@
 						<dd>
 							<a href="">修真</a>
 						</dd>
-						<dd>
-							<a href="">都市</a>
-						</dd>
-						<dd>
-							<a href="">现实</a>
-						</dd>
-						<dd>
-							<a href="">穿越</a>
-						</dd>
-						<dd>
-							<a href="">游戏</a>
-						</dd>
-						<dd>
-							<a href="">体育</a>
-						</dd>
-						<dd>
-							<a href="">科幻</a>
-						</dd>
-						<dd>
-							<a href="">体育</a>
-						</dd>
-						<dd>
-							<a href="">科幻</a>
-						</dd>
-						<dd>
-							<a href="">体育</a>
-						</dd>
-						<dd>
-							<a href="">科幻</a>
-						</dd>
-						<dd>
-							<a href="">体育</a>
-						</dd>
-						<dd>
-							<a href="">科幻</a>
-						</dd>
+
 					</dl></li>
 				<li class="layui-nav-item " id="showli"><a class="menus"
-					href="">全部作品</a></li>
+					href="showBook">全部作品</a></li>
 				<li class="layui-nav-item " id="showli2"><a class="menus"
 					href="">排行</a></li>
 				<li class="layui-nav-item " id="showli2"><a class="menus"

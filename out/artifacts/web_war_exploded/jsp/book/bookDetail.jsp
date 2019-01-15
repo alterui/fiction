@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html class="loaded">
@@ -35,7 +36,9 @@
 </script>
 </head>
 <body>
-	<div class="share-img">
+<%@include file="../include/fore/head.jsp"%>
+<%@include file="../include/fore/top.jsp"%>
+<%--	<div class="share-img">
 		<img src="${ctx }/img/index.png" width="300" height="300">
 	</div>
 	<div class="wrap">
@@ -43,7 +46,7 @@
 			<div class="box-center cf">
 				<div class="nav-list site-nav fl">
 					<ul>
-						<li class="site"><a class="pin-logo" href="/qidian"><span></span></a>
+						<li class="site"><a class="pin-logo" href="/"><span></span></a>
 							<div class="dropdown">
 								<a href=""> 起点女生</a> <a href=""> 我家的小说</a> <a href=""> 你家的小说</a>
 							</div></li>
@@ -93,7 +96,7 @@
 			</div>
 		</div>
 
-	</div>
+	</div>--%>
 
 	<div class="border-shadow ">
 		<span></span> <span></span>
@@ -105,7 +108,7 @@
 
 			<div class="book-img">
 				<a class="J-getJumpUrl" id="bookImg" href="" data-bid="3602691"><img
-					src="/qidian/img/bookcontent/${book.img }.jpg"></a>
+					src="/img/bookcontent/${book.img }.jpg"></a>
 			</div>
 
 			<div class="book-info ">

@@ -1,4 +1,4 @@
-package com.lr.fiction.service.impl;
+package com.lr.fiction.service;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -9,6 +9,31 @@ import com.lr.fiction.service.UserServiceI;
 import com.lr.fiction.util.JdbcUtil;
 
 public class UserServiceImp implements UserServiceI {
+	@Override
+	public UserInfo selectByAccout(String accout) {
+		String sql = "select * from user_info where uaccout= " + accout + "";
+		ResultSet result = JdbcUtil.select(sql);
+		UserInfo userInfo = new UserInfo();
+		try {
+			while (result.next()) {
+				setRusult(result, userInfo);
+
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return userInfo;
+	}
+
+	private void setRusult(ResultSet result, UserInfo userInfo) throws SQLException {
+		userInfo.setUno(result.getInt(1));
+		userInfo.setUaccount(result.getString(2));
+		userInfo.setUpwd(result.getString(3));
+		userInfo.setCreatetime(result.getTimestamp(4));
+		userInfo.setNickname(result.getString(5));
+		userInfo.setLasttime(result.getTimestamp(6));
+		userInfo.setMember(result.getInt(7));
+	}
 
 	@Override
 	public List<UserInfo> selectByUser(UserInfo user) {
@@ -19,13 +44,7 @@ public class UserServiceImp implements UserServiceI {
 		try {
 			while (result.next()) {
 				UserInfo userInfo = new UserInfo();
-				userInfo.setUno(result.getInt(1));
-				userInfo.setUaccount(result.getString(2));
-				userInfo.setUpwd(result.getString(3));
-				userInfo.setCreatetime(result.getTimestamp(4));
-				userInfo.setNickname(result.getString(5));
-				userInfo.setLasttime(result.getTimestamp(6));
-				userInfo.setMember(result.getInt(7));
+				setRusult(result, userInfo);
 				userList.add(userInfo);
 			}
 			return userList;

@@ -90,7 +90,7 @@
 		</form>
 	</div>
 	<div id="top4">
-		<a id="bookstore" href="./reader.jsp" target="_blank"> 我的书架 </a>
+		<a id="bookstore" href="" target="_blank"> 我的书架 </a>
 	</div>
 </div>
 <input type="hidden" value="${sessionScope.flag }" id="flag">

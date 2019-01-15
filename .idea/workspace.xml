@@ -7,25 +7,56 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6e48ad6-839b-4c87-aa86-610f20b45ca4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/aip_java_sdk_4_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/servlet_api.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lr/fiction/model/BookInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lr/fiction/model/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lr/fiction/model/Chapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lr/fiction/model/Volume.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lr/fiction/model/Writer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lr/fiction/pojo/BookInfoP.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lr/fiction/pojo/VolumeP.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lr/fiction/service/BookServiceI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lr/fiction/service/BookServiceImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lr/fiction/service/CategoryServiceI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lr/fiction/service/CategoryServiceImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lr/fiction/service/ChapterServiceI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lr/fiction/service/ChapterServiceImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lr/fiction/service/VolumeServiceI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lr/fiction/service/VolumeServiceImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lr/fiction/service/WriterServiceI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lr/fiction/service/WriterServiceImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lr/fiction/servlet/BookServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lr/fiction/test/Sample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lr/fiction/util/OutWriterUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lr/fiction/util/ReaderTextUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lr/fiction/util/Voice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/aip-java-sdk-4.1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/jsp/book/voice.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_5_1_6_bin.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/com/lr/fiction/service/UserServiceImp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/com/lr/fiction/service/UserServiceI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/com/lr/fiction/service/UserServiceI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/com/lr/fiction/service/impl/UserServiceImp.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/com/lr/fiction/servlet/UserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/com/lr/fiction/servlet/UserServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/jsp/include/fore/loginPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/jsp/include/fore/loginPage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/reg.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/test.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/qidian/com/lr/fiction/service/UserServiceImp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/jsp/book/bookDetail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/jsp/book/bookDetail.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/jsp/book/showChapter.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/jsp/book/showChapter.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/jsp/include/fore/indexContent.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/jsp/include/fore/indexContent.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/jsp/include/fore/navi.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/jsp/include/fore/navi.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/jsp/include/fore/top.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/jsp/include/fore/top.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/qidian/com/lr/fiction/service/UserServiceI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/qidian/com/lr/fiction/service/UserServiceI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/qidian/com/lr/fiction/service/impl/UserServiceImp.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/qidian/com/lr/fiction/servlet/UserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/qidian/com/lr/fiction/servlet/UserServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lr/fiction/model/UserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lr/fiction/model/UserInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qidian.iml" beforeDir="false" afterPath="$PROJECT_DIR$/qidian.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/lr/fiction/service/UserServiceI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lr/fiction/service/UserServiceI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lr/fiction/service/UserServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lr/fiction/service/impl/UserServiceImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/lr/fiction/service/impl/UserServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lr/fiction/service/UserServiceImp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/lr/fiction/servlet/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lr/fiction/servlet/UserServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lr/fiction/util/DataUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lr/fiction/util/DataUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lr/fiction/util/JdbcUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lr/fiction/util/JdbcUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/jsp/include/fore/loginPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsp/include/fore/loginPage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/reg.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/test.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/jsp/book/bookDetail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsp/book/bookDetail.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/jsp/book/showChapter.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsp/book/showChapter.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/jsp/include/fore/indexContent.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsp/include/fore/indexContent.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/jsp/include/fore/navi.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsp/include/fore/navi.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/jsp/include/fore/top.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsp/include/fore/top.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,10 +82,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/lr/fiction/servlet/UserServlet.java">
+        <entry file="file://$PROJECT_DIR$/web/jsp/book/bookDetail.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2709">
-              <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+            <state relative-caret-position="3216">
+              <caret line="155" column="63" selection-start-line="155" selection-start-column="61" selection-end-line="155" selection-end-column="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/lr/fiction/servlet/BookServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="428">
+              <caret line="81" column="19" selection-start-line="81" selection-start-column="19" selection-end-line="81" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -63,39 +103,36 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/lr/fiction/model/UserInfo.java">
+        <entry file="file://$PROJECT_DIR$/src/com/lr/fiction/util/ReaderTextUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-933">
-              <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+            <state relative-caret-position="120">
+              <caret line="8" column="27" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="27" />
               <folding>
-                <element signature="e#364#365#0" expanded="true" />
-                <element signature="e#381#382#0" expanded="true" />
-                <element signature="e#416#417#0" expanded="true" />
-                <element signature="e#437#438#0" expanded="true" />
-                <element signature="e#468#469#0" expanded="true" />
-                <element signature="e#490#491#0" expanded="true" />
-                <element signature="e#534#535#0" expanded="true" />
-                <element signature="e#565#566#0" expanded="true" />
-                <element signature="e#592#593#0" expanded="true" />
-                <element signature="e#610#611#0" expanded="true" />
-                <element signature="e#646#647#0" expanded="true" />
-                <element signature="e#669#670#0" expanded="true" />
-                <element signature="e#705#706#0" expanded="true" />
-                <element signature="e#729#730#0" expanded="true" />
-                <element signature="e#780#781#0" expanded="true" />
-                <element signature="e#815#816#0" expanded="true" />
-                <element signature="e#846#847#0" expanded="true" />
-                <element signature="e#868#869#0" expanded="true" />
-                <element signature="e#912#913#0" expanded="true" />
-                <element signature="e#943#944#0" expanded="true" />
-                <element signature="e#977#978#0" expanded="true" />
-                <element signature="e#999#1000#0" expanded="true" />
-                <element signature="e#1046#1047#0" expanded="true" />
-                <element signature="e#1077#1078#0" expanded="true" />
-                <element signature="e#1107#1108#0" expanded="true" />
-                <element signature="e#1127#1128#0" expanded="true" />
-                <element signature="e#1168#1169#0" expanded="true" />
-                <element signature="e#1195#1196#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/lr/fiction/service/BookServiceImp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="48" selection-start-line="48" selection-end-line="48" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/lr/fiction/util/JdbcUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2157">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -104,78 +141,39 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/lr/fiction/util/DataUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="864">
+              <caret line="36" column="16" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#443#444#0" expanded="true" />
-                <element signature="e#461#462#0" expanded="true" />
-                <element signature="e#498#499#0" expanded="true" />
-                <element signature="e#521#522#0" expanded="true" />
+                <element signature="e#424#425#0" expanded="true" />
+                <element signature="e#442#443#0" expanded="true" />
+                <element signature="e#479#480#0" expanded="true" />
+                <element signature="e#502#503#0" expanded="true" />
+                <element signature="e#527#528#0" expanded="true" />
                 <element signature="e#546#547#0" expanded="true" />
-                <element signature="e#565#566#0" expanded="true" />
-                <element signature="e#600#601#0" expanded="true" />
-                <element signature="e#625#626#0" expanded="true" />
-                <element signature="e#654#655#0" expanded="true" />
-                <element signature="e#674#675#0" expanded="true" />
-                <element signature="e#715#716#0" expanded="true" />
-                <element signature="e#742#743#0" expanded="true" />
-                <element signature="e#767#768#0" expanded="true" />
-                <element signature="e#783#784#0" expanded="true" />
+                <element signature="e#581#582#0" expanded="true" />
+                <element signature="e#606#607#0" expanded="true" />
+                <element signature="e#635#636#0" expanded="true" />
+                <element signature="e#655#656#0" expanded="true" />
+                <element signature="e#696#697#0" expanded="true" />
+                <element signature="e#723#724#0" expanded="true" />
+                <element signature="e#748#749#0" expanded="true" />
+                <element signature="e#764#765#0" expanded="true" />
+                <element signature="e#796#797#0" expanded="true" />
                 <element signature="e#815#816#0" expanded="true" />
-                <element signature="e#834#835#0" expanded="true" />
-                <element signature="e#860#861#0" expanded="true" />
-                <element signature="e#877#878#0" expanded="true" />
-                <element signature="e#911#912#0" expanded="true" />
-                <element signature="e#932#933#0" expanded="true" />
+                <element signature="e#841#842#0" expanded="true" />
+                <element signature="e#858#859#0" expanded="true" />
+                <element signature="e#892#893#0" expanded="true" />
+                <element signature="e#913#914#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/index.jsp">
+        <entry file="file://$PROJECT_DIR$/src/com/lr/fiction/service/UserServiceImp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/lr/fiction/service/UserServiceI.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/jsp/include/fore/register.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2376">
-              <caret line="99" column="29" selection-start-line="99" selection-start-column="29" selection-end-line="99" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/jsp/include/fore/loginPage.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="888">
-              <caret line="37" selection-start-line="37" selection-end-line="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/lr/fiction/service/impl/UserServiceImp.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-192">
+            <state relative-caret-position="240">
               <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -184,23 +182,36 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/lr/fiction/util/JdbcUtil.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/jsp/book/showChapter.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="191">
+              <caret line="49" column="48" selection-start-line="49" selection-start-column="48" selection-end-line="49" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/lr/fiction/util/Voice.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1232#1248#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+        <entry file="file://$PROJECT_DIR$/src/com/lr/fiction/util/OutWriterUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="29" column="10" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
+            <state relative-caret-position="116">
+              <caret line="10" column="26" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -210,8 +221,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -224,6 +235,14 @@
       <find>reg</find>
       <find>register</find>
       <find>q</find>
+      <find>book</find>
+      <find>qidian</find>
+      <find>提交</find>
+      <find>手机</find>
+      <find>广告</find>
+      <find>我的书架</find>
+      <find>我的</find>
+      <find>作品</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -237,17 +256,44 @@
         <option value="$PROJECT_DIR$/src/fiction/servlet/UserServlet.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/test.jsp" />
         <option value="$PROJECT_DIR$/web/reg.jsp" />
-        <option value="$PROJECT_DIR$/web/jsp/include/fore/top.jsp" />
         <option value="$PROJECT_DIR$/src/com/lr/fiction/service/UserServiceImp.java" />
         <option value="$PROJECT_DIR$/web/jsp/include/fore/register.jsp" />
         <option value="$PROJECT_DIR$/web/jsp/include/fore/loginPage.jsp" />
-        <option value="$PROJECT_DIR$/src/com/lr/fiction/servlet/UserServlet.java" />
-        <option value="$PROJECT_DIR$/src/com/lr/fiction/service/impl/UserServiceImp.java" />
-        <option value="$PROJECT_DIR$/src/com/lr/fiction/service/UserServiceI.java" />
         <option value="$PROJECT_DIR$/src/com/lr/fiction/model/UserInfo.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/com/lr/fiction/util/DataUtil.java" />
         <option value="$PROJECT_DIR$/src/com/lr/fiction/util/JdbcUtil.java" />
+        <option value="$PROJECT_DIR$/src/com/lr/fiction/service/UserServiceI.java" />
+        <option value="$PROJECT_DIR$/src/com/lr/fiction/service/impl/UserServiceImp.java" />
+        <option value="$PROJECT_DIR$/src/com/lr/fiction/model/Chapter.java" />
+        <option value="$PROJECT_DIR$/src/com/lr/fiction/model/Volume.java" />
+        <option value="$PROJECT_DIR$/src/com/lr/fiction/model/BookInfo.java" />
+        <option value="$PROJECT_DIR$/src/com/lr/fiction/model/Writer.java" />
+        <option value="$PROJECT_DIR$/src/com/lr/fiction/pojo/BookInfoP.java" />
+        <option value="$PROJECT_DIR$/src/com/lr/fiction/pojo/VolumeP.java" />
+        <option value="$PROJECT_DIR$/src/com/lr/fiction/service/CategoryServiceI.java" />
+        <option value="$PROJECT_DIR$/src/com/lr/fiction/service/BookServiceI.java" />
+        <option value="$PROJECT_DIR$/src/com/lr/fiction/service/impl/BookServiceImp.java" />
+        <option value="$PROJECT_DIR$/src/com/lr/fiction/service/WriterServiceImp.java" />
+        <option value="$PROJECT_DIR$/src/com/lr/fiction/service/WriterServiceI.java" />
+        <option value="$PROJECT_DIR$/src/com/lr/fiction/service/VolumeServiceI.java" />
+        <option value="$PROJECT_DIR$/src/com/lr/fiction/service/ChapterServiceI.java" />
+        <option value="$PROJECT_DIR$/src/com/lr/fiction/service/CategoryServiceImp.java" />
+        <option value="$PROJECT_DIR$/src/com/lr/fiction/model/Category.java" />
+        <option value="$PROJECT_DIR$/src/com/lr/fiction/service/BookServiceImp.java" />
+        <option value="$PROJECT_DIR$/src/com/lr/fiction/service/VolumeServiceImp.java" />
+        <option value="$PROJECT_DIR$/src/com/lr/fiction/servlet/UserServlet.java" />
+        <option value="$PROJECT_DIR$/src/com/lr/fiction/service/ChapterServiceImp.java" />
+        <option value="$PROJECT_DIR$/web/jsp/book/bookDetail.jsp" />
+        <option value="$PROJECT_DIR$/web/jsp/include/fore/top.jsp" />
+        <option value="$PROJECT_DIR$/web/jsp/include/fore/indexContent.jsp" />
+        <option value="$PROJECT_DIR$/web/jsp/include/fore/navi.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/com/lr/fiction/test/Sample.java" />
+        <option value="$PROJECT_DIR$/web/jsp/book/showChapter.jsp" />
+        <option value="$PROJECT_DIR$/src/com/lr/fiction/util/Voice.java" />
+        <option value="$PROJECT_DIR$/src/com/lr/fiction/util/OutWriterUtil.java" />
+        <option value="$PROJECT_DIR$/src/com/lr/fiction/util/ReaderTextUtil.java" />
+        <option value="$PROJECT_DIR$/src/com/lr/fiction/servlet/BookServlet.java" />
       </list>
     </option>
   </component>
@@ -267,8 +313,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="265" />
-    <option name="y" value="-15" />
+    <option name="x" value="-55" />
+    <option name="y" value="-20" />
     <option name="width" value="1540" />
     <option name="height" value="1060" />
   </component>
@@ -280,8 +326,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -292,11 +336,6 @@
             <path>
               <item name="qidian" type="b2602c69:ProjectViewProjectNode" />
               <item name="qidian" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="qidian" type="b2602c69:ProjectViewProjectNode" />
-              <item name="qidian" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -304,28 +343,6 @@
               <item name="qidian" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="fiction" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="qidian" type="b2602c69:ProjectViewProjectNode" />
-              <item name="qidian" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="fiction" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="qidian" type="b2602c69:ProjectViewProjectNode" />
-              <item name="qidian" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="fiction" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="qidian" type="b2602c69:ProjectViewProjectNode" />
-              <item name="qidian" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="fiction" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="qidian" type="b2602c69:ProjectViewProjectNode" />
@@ -333,6 +350,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="fiction" type="462c0819:PsiDirectoryNode" />
               <item name="servlet" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="qidian" type="b2602c69:ProjectViewProjectNode" />
+              <item name="qidian" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="fiction" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="qidian" type="b2602c69:ProjectViewProjectNode" />
@@ -350,6 +374,19 @@
               <item name="qidian" type="b2602c69:ProjectViewProjectNode" />
               <item name="qidian" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="qidian" type="b2602c69:ProjectViewProjectNode" />
+              <item name="qidian" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+              <item name="bookcontent" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="qidian" type="b2602c69:ProjectViewProjectNode" />
+              <item name="qidian" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="jsp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -357,7 +394,29 @@
               <item name="qidian" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="jsp" type="462c0819:PsiDirectoryNode" />
+              <item name="book" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="qidian" type="b2602c69:ProjectViewProjectNode" />
+              <item name="qidian" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+              <item name="fore" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="qidian" type="b2602c69:ProjectViewProjectNode" />
+              <item name="qidian" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
               <item name="include" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="qidian" type="b2602c69:ProjectViewProjectNode" />
+              <item name="qidian" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+              <item name="include" type="462c0819:PsiDirectoryNode" />
+              <item name="book" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="qidian" type="b2602c69:ProjectViewProjectNode" />
@@ -373,20 +432,30 @@
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="qidian" type="b2602c69:ProjectViewProjectNode" />
+              <item name="qidian" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547180819054" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547550249255" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RecentsManager">
@@ -394,11 +463,11 @@
       <recent name="C:\Users\ALTERUI\IdeaProjects\qidian\web" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\ALTERUI\IdeaProjects\qidian\src\com\lr\fiction" />
-      <recent name="C:\Users\ALTERUI\IdeaProjects\qidian\src\com\lr\fiction\util" />
-      <recent name="C:\Users\ALTERUI\IdeaProjects\fiction\web" />
-      <recent name="C:\Users\ALTERUI\IdeaProjects\fiction\web\js" />
-      <recent name="C:\Users\ALTERUI\IdeaProjects\fiction\web\WEB-INF\lib" />
+      <recent name="D:\code\projectCode\qidian\web\WEB-INF\lib" />
+      <recent name="D:\code\projectCode\qidian\web\jsp\book" />
+      <recent name="D:\code\projectCode\qidian\src\com\lr\fiction\servlet" />
+      <recent name="D:\code\projectCode\qidian\src\com\lr\fiction\service\impl" />
+      <recent name="D:\code\projectCode\qidian\src\com\lr\fiction\service" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -427,6 +496,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Sample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lr.fiction.test.Sample" />
+      <module name="qidian" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lr.fiction.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="aip-java-sdk-4.1.1.jar" type="JarApplication" factoryName="JAR Application">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/web/WEB-INF/lib/aip-java-sdk-4.1.1.jar" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2" />
+    </configuration>
     <configuration name="fastjson-1.2.35.jar" type="JarApplication" factoryName="JAR Application">
       <option name="JAR_PATH" value="$PROJECT_DIR$/web/WEB-INF/lib/fastjson-1.2.35.jar" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -434,7 +521,7 @@
     </configuration>
     <configuration name="Tomcat 8.0.53" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.53" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
-      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATING_POLICY" value="update-resources" />
       <deployment>
         <artifact name="web:war exploded">
           <settings>
@@ -507,11 +594,14 @@
     </configuration>
     <list>
       <item itemvalue="Application.JDBCUtil" />
+      <item itemvalue="Application.Sample" />
       <item itemvalue="JAR Application.fastjson-1.2.35.jar" />
+      <item itemvalue="JAR Application.aip-java-sdk-4.1.1.jar" />
       <item itemvalue="Tomcat Server.Tomcat 8.0.53" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Sample" />
         <item itemvalue="Application.JDBCUtil" />
       </list>
     </recent_temporary>
@@ -537,11 +627,17 @@
       <workItem from="1547112147030" duration="7659000" />
       <workItem from="1547169774404" duration="1411000" />
       <workItem from="1547180377197" duration="334000" />
+      <workItem from="1547447090223" duration="3511000" />
+      <workItem from="1547450751378" duration="142000" />
+      <workItem from="1547454508543" duration="5570000" />
+      <workItem from="1547470115662" duration="1832000" />
+      <workItem from="1547515511913" duration="16470000" />
+      <workItem from="1547541491741" duration="6314000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29832000" />
+    <option name="totallyTimeSpent" value="63671000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
@@ -553,7 +649,7 @@
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Web" order="4" side_tool="true" />
       <window_info id="Designer" order="5" />
-      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.18359375" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.18619792" />
       <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
@@ -565,8 +661,8 @@
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32882273" />
       <window_info anchor="bottom" id="Message" order="8" />
       <window_info anchor="bottom" id="Find" order="9" weight="0.3292683" />
-      <window_info anchor="bottom" id="Run" order="10" sideWeight="0.49934897" visible="true" weight="0.2777778" />
-      <window_info anchor="bottom" id="Debug" order="11" weight="0.15176152" />
+      <window_info anchor="bottom" id="Run" order="10" sideWeight="0.49934897" visible="true" weight="0.040650405" />
+      <window_info anchor="bottom" id="Debug" order="11" weight="0.3794038" />
       <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="14" />
@@ -580,127 +676,422 @@
       <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Image Layers" order="0" />
+      <window_info id="Capture Tool" order="1" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Web" order="4" side_tool="true" />
+      <window_info id="Designer" order="5" />
+      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.18619792" />
+      <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="0" />
+      <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50065106" side_tool="true" weight="0.3306233" />
+      <window_info anchor="bottom" id="Messages" order="3" weight="0.3292683" />
+      <window_info anchor="bottom" id="Java Enterprise" order="4" />
+      <window_info anchor="bottom" id="Database Changes" order="5" />
+      <window_info anchor="bottom" id="Version Control" order="6" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32882273" />
+      <window_info anchor="bottom" id="Message" order="8" />
+      <window_info anchor="bottom" id="Find" order="9" weight="0.3292683" />
+      <window_info active="true" anchor="bottom" id="Run" order="10" sideWeight="0.49934897" visible="true" weight="0.14769648" />
+      <window_info anchor="bottom" id="Debug" order="11" weight="0.3794038" />
+      <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="14" />
+      <window_info anchor="right" id="Palette" order="0" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="Database" order="2" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Maven" order="5" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/lr/fiction/service/BookServiceImp.java</url>
+          <line>104</line>
+          <properties />
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/lr/fiction/service/BookServiceImp.java</url>
+          <line>106</line>
+          <properties />
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/lr/fiction/service/BookServiceImp.java</url>
+          <line>108</line>
+          <properties />
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/lr/fiction/service/BookServiceImp.java</url>
+          <line>146</line>
+          <properties />
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/lr/fiction/service/VolumeServiceImp.java</url>
+          <line>13</line>
+          <properties />
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/lr/fiction/service/VolumeServiceImp.java</url>
+          <line>14</line>
+          <properties />
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/lr/fiction/service/VolumeServiceImp.java</url>
+          <line>17</line>
+          <properties />
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/lr/fiction/service/VolumeServiceImp.java</url>
+          <line>18</line>
+          <properties />
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/lr/fiction/service/VolumeServiceImp.java</url>
+          <line>19</line>
+          <properties />
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/lr/fiction/service/VolumeServiceImp.java</url>
+          <line>25</line>
+          <properties />
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/fiction/model/UserInfo.java" />
-    <entry file="file://$PROJECT_DIR$/qidian.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/mysql-connector-java-5.1.6-bin.jar!/com/mysql/jdbc/Driver.class" />
-    <entry file="file://$PROJECT_DIR$/src/fiction/util/JDBCUtil.java" />
-    <entry file="file://$PROJECT_DIR$/src/fiction/servlet/UserServlet.java" />
-    <entry file="file://$PROJECT_DIR$/web/js/jquery-2.1.1.js">
+    <entry file="file://$PROJECT_DIR$/src/com/lr/fiction/model/Writer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state relative-caret-position="-336">
+          <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lr/fiction/service/BookServiceI.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/lr/fiction/service/VolumeServiceI.java" />
-    <entry file="jar://C:/Program Files/Apache Software Foundation/Tomcat 8.0/lib/servlet-api.jar!/javax/servlet/http/HttpServletResponse.class">
+    <entry file="file://$PROJECT_DIR$/src/com/lr/fiction/service/CategoryServiceI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-810">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/login.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lr/fiction/util/JSONUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-191">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        <state relative-caret-position="192">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsp/include/fore/foot.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsp/include/fore/head.jsp">
+    <entry file="file://$PROJECT_DIR$/src/com/lr/fiction/service/CategoryServiceImp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-283" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsp/include/fore/indexContent.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-955" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsp/include/fore/navi.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1440" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lr/fiction/pojo/BookInfoP.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/lr/fiction/pojo/VolumeP.java" />
-    <entry file="file://$PROJECT_DIR$/web/jsp/fore/login.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/test.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsp/include/fore/top.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1560">
-          <caret line="65" column="73" selection-start-line="65" selection-start-column="73" selection-end-line="65" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsp/include/fore/register.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2376">
-          <caret line="99" column="29" selection-start-line="99" selection-start-column="29" selection-end-line="99" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsp/include/fore/loginPage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="888">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        <state relative-caret-position="-92">
+          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/lr/fiction/service/UserServiceI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+        <state relative-caret-position="504">
+          <caret line="23" column="43" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lr/fiction/service/ChapterServiceI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lr/fiction/pojo/VolumeP.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lr/fiction/pojo/BookInfoP.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lr/fiction/service/WriterServiceImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-404">
+          <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lr/fiction/service/BookServiceI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lr/fiction/model/BookInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lr/fiction/model/Chapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-518">
+          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lr/fiction/model/Category.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lr/fiction/service/WriterServiceI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lr/fiction/service/VolumeServiceI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lr/fiction/service/VolumeServiceImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lr/fiction/service/ChapterServiceImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="14" column="56" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/img/bookcontent/151.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/img/bookcontent/181.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/img/bookcontent/180.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/img/bookcontent/153.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/img/bookcontent/152.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/jsp/include/fore/top.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2208">
+          <caret line="92" column="32" selection-start-line="92" selection-start-column="32" selection-end-line="92" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/jsp/include/fore/register.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-443">
+          <caret line="74" column="14" selection-start-line="74" selection-start-column="12" selection-end-line="74" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/jsp/include/fore/loginPage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1105">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/jsp/include/fore/indexContent.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/jsp/include/fore/head.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-179" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/jsp/include/fore/foot.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/jsp/book/showSearch.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" selection-start-line="3" selection-end-line="4" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/jsp/include/fore/navi.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/jsp/book/voice.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/jsp/fore/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="44" selection-start-line="3" selection-end-line="3" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/jsp/include/book/bookInfo.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="747" selection-start-line="747" selection-end-line="747" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/jsp/include/book/showBook.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/jsp/include/book/searchResult.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1752">
+          <caret line="73" column="53" selection-start-line="73" selection-start-column="53" selection-end-line="73" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lr/fiction/test/Sample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="864">
+          <caret line="50" column="17" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#1644#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/lr/fiction/servlet/UserServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2709">
-          <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+        <state relative-caret-position="264">
+          <caret line="92" column="38" lean-forward="true" selection-start-line="92" selection-start-column="5" selection-end-line="92" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lr/fiction/service/impl/UserServiceImp.java">
+    <entry file="file://$PROJECT_DIR$/src/com/lr/fiction/util/DataUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-192">
+        <state relative-caret-position="864">
+          <caret line="36" column="16" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#424#425#0" expanded="true" />
+            <element signature="e#442#443#0" expanded="true" />
+            <element signature="e#479#480#0" expanded="true" />
+            <element signature="e#502#503#0" expanded="true" />
+            <element signature="e#527#528#0" expanded="true" />
+            <element signature="e#546#547#0" expanded="true" />
+            <element signature="e#581#582#0" expanded="true" />
+            <element signature="e#606#607#0" expanded="true" />
+            <element signature="e#635#636#0" expanded="true" />
+            <element signature="e#655#656#0" expanded="true" />
+            <element signature="e#696#697#0" expanded="true" />
+            <element signature="e#723#724#0" expanded="true" />
+            <element signature="e#748#749#0" expanded="true" />
+            <element signature="e#764#765#0" expanded="true" />
+            <element signature="e#796#797#0" expanded="true" />
+            <element signature="e#815#816#0" expanded="true" />
+            <element signature="e#841#842#0" expanded="true" />
+            <element signature="e#858#859#0" expanded="true" />
+            <element signature="e#892#893#0" expanded="true" />
+            <element signature="e#913#914#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lr/fiction/service/UserServiceImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -708,98 +1099,89 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lr/fiction/model/UserInfo.java">
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/mysql-connector-java-5.1.47.jar!/com/mysql/jdbc/NonRegisteringDriver.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-933">
-          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
-          <folding>
-            <element signature="e#364#365#0" expanded="true" />
-            <element signature="e#381#382#0" expanded="true" />
-            <element signature="e#416#417#0" expanded="true" />
-            <element signature="e#437#438#0" expanded="true" />
-            <element signature="e#468#469#0" expanded="true" />
-            <element signature="e#490#491#0" expanded="true" />
-            <element signature="e#534#535#0" expanded="true" />
-            <element signature="e#565#566#0" expanded="true" />
-            <element signature="e#592#593#0" expanded="true" />
-            <element signature="e#610#611#0" expanded="true" />
-            <element signature="e#646#647#0" expanded="true" />
-            <element signature="e#669#670#0" expanded="true" />
-            <element signature="e#705#706#0" expanded="true" />
-            <element signature="e#729#730#0" expanded="true" />
-            <element signature="e#780#781#0" expanded="true" />
-            <element signature="e#815#816#0" expanded="true" />
-            <element signature="e#846#847#0" expanded="true" />
-            <element signature="e#868#869#0" expanded="true" />
-            <element signature="e#912#913#0" expanded="true" />
-            <element signature="e#943#944#0" expanded="true" />
-            <element signature="e#977#978#0" expanded="true" />
-            <element signature="e#999#1000#0" expanded="true" />
-            <element signature="e#1046#1047#0" expanded="true" />
-            <element signature="e#1077#1078#0" expanded="true" />
-            <element signature="e#1107#1108#0" expanded="true" />
-            <element signature="e#1127#1128#0" expanded="true" />
-            <element signature="e#1168#1169#0" expanded="true" />
-            <element signature="e#1195#1196#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="144">
+          <caret line="52" column="118" selection-start-line="52" selection-start-column="118" selection-end-line="52" selection-end-column="118" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/reg.jsp">
+    <entry file="file://$PROJECT_DIR$/web/jsp/book/bookDetail.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="13" column="27" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="27" />
+        <state relative-caret-position="3216">
+          <caret line="155" column="63" selection-start-line="155" selection-start-column="61" selection-end-line="155" selection-end-column="63" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/io/InputStream.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="157">
+          <caret line="259" column="15" selection-start-line="259" selection-start-column="15" selection-end-line="259" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+    <entry file="file://$PROJECT_DIR$/src/com/lr/fiction/service/BookServiceImp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="29" column="10" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lr/fiction/util/DataUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="136">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#443#444#0" expanded="true" />
-            <element signature="e#461#462#0" expanded="true" />
-            <element signature="e#498#499#0" expanded="true" />
-            <element signature="e#521#522#0" expanded="true" />
-            <element signature="e#546#547#0" expanded="true" />
-            <element signature="e#565#566#0" expanded="true" />
-            <element signature="e#600#601#0" expanded="true" />
-            <element signature="e#625#626#0" expanded="true" />
-            <element signature="e#654#655#0" expanded="true" />
-            <element signature="e#674#675#0" expanded="true" />
-            <element signature="e#715#716#0" expanded="true" />
-            <element signature="e#742#743#0" expanded="true" />
-            <element signature="e#767#768#0" expanded="true" />
-            <element signature="e#783#784#0" expanded="true" />
-            <element signature="e#815#816#0" expanded="true" />
-            <element signature="e#834#835#0" expanded="true" />
-            <element signature="e#860#861#0" expanded="true" />
-            <element signature="e#877#878#0" expanded="true" />
-            <element signature="e#911#912#0" expanded="true" />
-            <element signature="e#932#933#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/jsp/book/showChapter.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="49" column="48" selection-start-line="49" selection-start-column="48" selection-end-line="49" selection-end-column="48" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/lr/fiction/util/JdbcUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="-2157">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lr/fiction/util/Voice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1232#1248#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lr/fiction/util/OutWriterUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lr/fiction/util/ReaderTextUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="27" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lr/fiction/servlet/BookServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="81" column="19" selection-start-line="81" selection-start-column="19" selection-end-line="81" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -885,7 +1267,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>mysql-connector-java-5.1.6-bin</last-edited>
+          <last-edited>servlet-api</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

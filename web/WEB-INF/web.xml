@@ -38,4 +38,44 @@
     </servlet-mapping>
 
 
+    <!--图书列表-->
+    <servlet>
+        <servlet-name>showBook</servlet-name>
+        <servlet-class>com.lr.fiction.servlet.BookServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>showBook</servlet-name>
+        <url-pattern>/showBook</url-pattern>
+    </servlet-mapping>
+
+    <!--图书详情-->
+    <servlet>
+        <servlet-name>bookDetail</servlet-name>
+        <servlet-class>com.lr.fiction.servlet.BookServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>bookDetail</servlet-name>
+        <url-pattern>/bookDetail</url-pattern>
+    </servlet-mapping>
+
+
+    <!--小说内容详情-->
+    <servlet>
+        <servlet-name>chapter</servlet-name>
+        <servlet-class>com.lr.fiction.servlet.BookServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>chapter</servlet-name>
+        <url-pattern>/chapter</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>speak</servlet-name>
+        <servlet-class>com.lr.fiction.servlet.BookServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>speak</servlet-name>
+        <url-pattern>/speak</url-pattern>
+    </servlet-mapping>
+
 </web-app>

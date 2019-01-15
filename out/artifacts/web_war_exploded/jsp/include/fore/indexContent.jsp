@@ -3,12 +3,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <div
 	style="margin-top: 10px;margin-left:13%;width: 85%;height:283px;;overflow: hidden;postion:relative">
-	<!-- 内容主体区域 -->
-	<div style="width: 95%; height: 100%;">
-		<div
-			style="width: 12%; height: 99%; float: left; border: 1px solid #000">
-			<div>广告</div>
-		</div>
+
+
+
 		<div
 			style="width: 63%; height: 99%; float: left; margin-left: 1%; border: 1px solid #000; overflow: inherit">
 			<div class="layui-carousel" id="test1">

@@ -1,10 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@include file="../include/fore/head.jsp"%>
+<%@include file="../include/fore/top.jsp"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html class="loaded">
 <head>
+
 <c:set var="ctx" value="${pageContext.request.contextPath}" />
 <title>${book.bname }_${book.writer.wname }_${book.category.cname }</title>
 <link rel="stylesheet" href="${ctx}/css/vote_popup.css">
@@ -26,19 +29,26 @@
 		var audio = document.getElementById("au");
 		audio.load();
 	}
+
 	function audioPlay() {
-		var audio = document.getElementById("au");
+		/*var audio = document.getElementById("au");
+			var val=document.getElementById("val").innerText;
+			alert(val);
+			zhText = encodeURI(zhText);
+			audio.src="http://tts.baidu.com/text2audio?lan=zh&ie=UTF-8&spd=2&text="+ zhText +"\" type=\"audio/mpeg\">";
+			*/
+	var audio = document.getElementById("au");
 		var url = $(".j_chapterName").data("url");
 		var audioSrc = audio.currentSrc;
 		if(audioSrc==""){
-			var xhr = new XMLHttpRequest(); //配置请求方式、请求地址以及是否同步 
-			xhr.open('get', 'speak?url=' + url, true);
+			var xhr = new XMLHttpRequest(); //配置请求方式、请求地址以及是否同步
+			xhr.open('get', 'speak?url='  + encodeURIComponent(url), true);
 			//设置请求结果类型为blob
 			xhr.responseType = 'blob';
-			//请求成功回调函数 
+			//请求成功回调函数
 			xhr.onload = function(e) {
-				if (this.status == 200) {//请求成功 //获取blob对象 
-					var blob = this.response; //获取blob对象地址，并把值赋给容器 
+				if (this.status == 200) {//请求成功 //获取blob对象
+					var blob = this.response; //获取blob对象地址，并把值赋给容器
 					audio.src = window.URL.createObjectURL(blob);
 				} else {
 					alert("音频加载失败,请稍候再试")
@@ -49,7 +59,7 @@
 			audio.play();
 		}
 		/* var form = new FormData();
-		/* form.append("url",url); 
+		/* form.append("url",url);
 		 */
 	}
 	$(function() {
@@ -57,7 +67,11 @@
 	})
 </script>
 </head>
+
 <body class="theme-0">
+
+
+
 	<div class="share-img">
 		<img src="${ctx }/img/index.png" width="300" height="300">
 	</div>
@@ -72,8 +86,10 @@
 			<button class="layui-btn layui-btn-sm layui-btn-radius"
 				onclick="audioReload()">重听</button>
 		</div>
-		<div id="readHeader" class="read-header" data-l1="">
-			<div class="wrap-center cf">
+
+		<%--<div id="readHeader" class="read-header" data-l1="">
+
+			&lt;%&ndash;<div class="wrap-center cf">
 				<div class="left-nav fl">
 					<div class="logo">
 						<a class="logo-ico"></a>
@@ -106,8 +122,8 @@
 						</a> <a class="reg" href="javascript:" target="_blank">注册 </a></li>
 						<li><a target="_blank">充值</a></li>
 					</ul>
-				</div>
-			</div>
+				</div>&ndash;%&gt;
+			</div>--%>
 		</div>
 
 		<div class="read-main-wrap font-faily01" style="font-size: 18px">
@@ -135,9 +151,11 @@
 								<!--更新时间 -->
 								<i>${fn:substring(chapter.createtime,0,19 )}</i>
 							</div>
+						${lineTxt}
+
 						</div>
-						<!-- 章节内容 -->
-						<div class="read-content j_readContent">
+						<!-- 小说内容 -->
+						<div id="val" class="read-content j_readContent">
 							<c:forEach items="${chapterList }" var="str">
 								<p>${str}</p>
 							</c:forEach>
